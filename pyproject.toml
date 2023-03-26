@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "weather-forecast-app"
+version = "0.1.0"
+description = "weather forecast simple web app"
+authors = ["chazuka <hello@komang.id>"]
+readme = "README.md"
+packages = [{include = "weather_forecast"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.95.0"
+uvicorn = "^0.21.1"
+Jinja2 = "^3.1.2"
+pydantic = "^1.10.7"
+python-dotenv = "^1.0.0"
+httpx = "^0.23.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
